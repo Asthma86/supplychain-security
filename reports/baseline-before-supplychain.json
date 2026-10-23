@@ -1,0 +1,696 @@
+{
+  "checkpoint": "KT-1",
+  "track": "Track 2: Supply Chain Security & Verdaccio",
+  "experiment": "Experiment 3 (Baseline Before AST Constant Folding & Metric BK-Tree)",
+  "generated_at": "2026-10-23T05:17:47.484977+00:00",
+
+  "dataset_summary": {
+    "total_packages": 50,
+    "benign_packages": 25,
+    "malicious_packages": 25,
+    "obfuscated_malicious_packages": 10,
+    "typosquatting_packages": 5,
+    "plain_malicious_packages": 10
+  },
+  "confusion_matrix": {
+    "true_positives": 10,
+    "false_positives": 0,
+    "false_negatives": 15,
+    "true_negatives": 25
+  },
+  "metrics": {
+    "raw_baseline_recall": 0.4,
+    "raw_baseline_precision": 1.0,
+    "raw_baseline_f1": 0.5714,
+    "obfuscated_samples_recall": 0.0,
+    "typosquatting_recall": 0.0
+  },
+  "blindspots_analysis": {
+    "missed_obfuscated_droppers": 10,
+    "missed_typosquats": 5,
+    "vulnerability_analysis": "Raw GuardDog and YARA-X fail against packages using chr() character code arrays, dynamic getattr(__import__('os'), 'system'), and concatenated base64 droppers. Furthermore, without BK-Tree metric distance matching against top-10000 packages, typosquatting variants bypass standard filters."
+  },
+  "packages": [
+    {
+      "package_name": "requests",
+      "package_version": "2.31.0",
+      "ecosystem": "pypi",
+      "category": "BENIGN",
+      "expected_is_malicious": false,
+      "raw_scanner_findings": [],
+      "verdict": "BENIGN",
+      "quarantine_action": "ALLOW",
+      "missed_due_to_obfuscation": false,
+      "missed_due_to_no_bktree": false
+    },
+    {
+      "package_name": "numpy",
+      "package_version": "1.26.4",
+      "ecosystem": "pypi",
+      "category": "BENIGN",
+      "expected_is_malicious": false,
+      "raw_scanner_findings": [],
+      "verdict": "BENIGN",
+      "quarantine_action": "ALLOW",
+      "missed_due_to_obfuscation": false,
+      "missed_due_to_no_bktree": false
+    },
+    {
+      "package_name": "pandas",
+      "package_version": "2.2.1",
+      "ecosystem": "pypi",
+      "category": "BENIGN",
+      "expected_is_malicious": false,
+      "raw_scanner_findings": [],
+      "verdict": "BENIGN",
+      "quarantine_action": "ALLOW",
+      "missed_due_to_obfuscation": false,
+      "missed_due_to_no_bktree": false
+    },
+    {
+      "package_name": "flask",
+      "package_version": "3.0.2",
+      "ecosystem": "pypi",
+      "category": "BENIGN",
+      "expected_is_malicious": false,
+      "raw_scanner_findings": [],
+      "verdict": "BENIGN",
+      "quarantine_action": "ALLOW",
+      "missed_due_to_obfuscation": false,
+      "missed_due_to_no_bktree": false
+    },
+    {
+      "package_name": "urllib3",
+      "package_version": "2.2.1",
+      "ecosystem": "pypi",
+      "category": "BENIGN",
+      "expected_is_malicious": false,
+      "raw_scanner_findings": [],
+      "verdict": "BENIGN",
+      "quarantine_action": "ALLOW",
+      "missed_due_to_obfuscation": false,
+      "missed_due_to_no_bktree": false
+    },
+    {
+      "package_name": "certifi",
+      "package_version": "2024.2.2",
+      "ecosystem": "pypi",
+      "category": "BENIGN",
+      "expected_is_malicious": false,
+      "raw_scanner_findings": [],
+      "verdict": "BENIGN",
+      "quarantine_action": "ALLOW",
+      "missed_due_to_obfuscation": false,
+      "missed_due_to_no_bktree": false
+    },
+    {
+      "package_name": "click",
+      "package_version": "8.1.7",
+      "ecosystem": "pypi",
+      "category": "BENIGN",
+      "expected_is_malicious": false,
+      "raw_scanner_findings": [],
+      "verdict": "BENIGN",
+      "quarantine_action": "ALLOW",
+      "missed_due_to_obfuscation": false,
+      "missed_due_to_no_bktree": false
+    },
+    {
+      "package_name": "pydantic",
+      "package_version": "2.6.4",
+      "ecosystem": "pypi",
+      "category": "BENIGN",
+      "expected_is_malicious": false,
+      "raw_scanner_findings": [],
+      "verdict": "BENIGN",
+      "quarantine_action": "ALLOW",
+      "missed_due_to_obfuscation": false,
+      "missed_due_to_no_bktree": false
+    },
+    {
+      "package_name": "pytest",
+      "package_version": "8.1.1",
+      "ecosystem": "pypi",
+      "category": "BENIGN",
+      "expected_is_malicious": false,
+      "raw_scanner_findings": [],
+      "verdict": "BENIGN",
+      "quarantine_action": "ALLOW",
+      "missed_due_to_obfuscation": false,
+      "missed_due_to_no_bktree": false
+    },
+    {
+      "package_name": "django",
+      "package_version": "5.0.3",
+      "ecosystem": "pypi",
+      "category": "BENIGN",
+      "expected_is_malicious": false,
+      "raw_scanner_findings": [],
+      "verdict": "BENIGN",
+      "quarantine_action": "ALLOW",
+      "missed_due_to_obfuscation": false,
+      "missed_due_to_no_bktree": false
+    },
+    {
+      "package_name": "express",
+      "package_version": "4.19.2",
+      "ecosystem": "npm",
+      "category": "BENIGN",
+      "expected_is_malicious": false,
+      "raw_scanner_findings": [],
+      "verdict": "BENIGN",
+      "quarantine_action": "ALLOW",
+      "missed_due_to_obfuscation": false,
+      "missed_due_to_no_bktree": false
+    },
+    {
+      "package_name": "lodash",
+      "package_version": "4.17.21",
+      "ecosystem": "npm",
+      "category": "BENIGN",
+      "expected_is_malicious": false,
+      "raw_scanner_findings": [],
+      "verdict": "BENIGN",
+      "quarantine_action": "ALLOW",
+      "missed_due_to_obfuscation": false,
+      "missed_due_to_no_bktree": false
+    },
+    {
+      "package_name": "chalk",
+      "package_version": "5.3.0",
+      "ecosystem": "npm",
+      "category": "BENIGN",
+      "expected_is_malicious": false,
+      "raw_scanner_findings": [],
+      "verdict": "BENIGN",
+      "quarantine_action": "ALLOW",
+      "missed_due_to_obfuscation": false,
+      "missed_due_to_no_bktree": false
+    },
+    {
+      "package_name": "react",
+      "package_version": "18.2.0",
+      "ecosystem": "npm",
+      "category": "BENIGN",
+      "expected_is_malicious": false,
+      "raw_scanner_findings": [],
+      "verdict": "BENIGN",
+      "quarantine_action": "ALLOW",
+      "missed_due_to_obfuscation": false,
+      "missed_due_to_no_bktree": false
+    },
+    {
+      "package_name": "axios",
+      "package_version": "1.6.8",
+      "ecosystem": "npm",
+      "category": "BENIGN",
+      "expected_is_malicious": false,
+      "raw_scanner_findings": [],
+      "verdict": "BENIGN",
+      "quarantine_action": "ALLOW",
+      "missed_due_to_obfuscation": false,
+      "missed_due_to_no_bktree": false
+    },
+    {
+      "package_name": "debug",
+      "package_version": "4.3.4",
+      "ecosystem": "npm",
+      "category": "BENIGN",
+      "expected_is_malicious": false,
+      "raw_scanner_findings": [],
+      "verdict": "BENIGN",
+      "quarantine_action": "ALLOW",
+      "missed_due_to_obfuscation": false,
+      "missed_due_to_no_bktree": false
+    },
+    {
+      "package_name": "commander",
+      "package_version": "12.0.0",
+      "ecosystem": "npm",
+      "category": "BENIGN",
+      "expected_is_malicious": false,
+      "raw_scanner_findings": [],
+      "verdict": "BENIGN",
+      "quarantine_action": "ALLOW",
+      "missed_due_to_obfuscation": false,
+      "missed_due_to_no_bktree": false
+    },
+    {
+      "package_name": "moment",
+      "package_version": "2.30.1",
+      "ecosystem": "npm",
+      "category": "BENIGN",
+      "expected_is_malicious": false,
+      "raw_scanner_findings": [],
+      "verdict": "BENIGN",
+      "quarantine_action": "ALLOW",
+      "missed_due_to_obfuscation": false,
+      "missed_due_to_no_bktree": false
+    },
+    {
+      "package_name": "async",
+      "package_version": "3.2.5",
+      "ecosystem": "npm",
+      "category": "BENIGN",
+      "expected_is_malicious": false,
+      "raw_scanner_findings": [],
+      "verdict": "BENIGN",
+      "quarantine_action": "ALLOW",
+      "missed_due_to_obfuscation": false,
+      "missed_due_to_no_bktree": false
+    },
+    {
+      "package_name": "dotenv",
+      "package_version": "16.4.5",
+      "ecosystem": "npm",
+      "category": "BENIGN",
+      "expected_is_malicious": false,
+      "raw_scanner_findings": [],
+      "verdict": "BENIGN",
+      "quarantine_action": "ALLOW",
+      "missed_due_to_obfuscation": false,
+      "missed_due_to_no_bktree": false
+    },
+    {
+      "package_name": "tslib",
+      "package_version": "2.6.2",
+      "ecosystem": "npm",
+      "category": "BENIGN",
+      "expected_is_malicious": false,
+      "raw_scanner_findings": [],
+      "verdict": "BENIGN",
+      "quarantine_action": "ALLOW",
+      "missed_due_to_obfuscation": false,
+      "missed_due_to_no_bktree": false
+    },
+    {
+      "package_name": "inquirer",
+      "package_version": "9.2.16",
+      "ecosystem": "npm",
+      "category": "BENIGN",
+      "expected_is_malicious": false,
+      "raw_scanner_findings": [],
+      "verdict": "BENIGN",
+      "quarantine_action": "ALLOW",
+      "missed_due_to_obfuscation": false,
+      "missed_due_to_no_bktree": false
+    },
+    {
+      "package_name": "glob",
+      "package_version": "10.3.10",
+      "ecosystem": "npm",
+      "category": "BENIGN",
+      "expected_is_malicious": false,
+      "raw_scanner_findings": [],
+      "verdict": "BENIGN",
+      "quarantine_action": "ALLOW",
+      "missed_due_to_obfuscation": false,
+      "missed_due_to_no_bktree": false
+    },
+    {
+      "package_name": "uuid",
+      "package_version": "9.0.1",
+      "ecosystem": "npm",
+      "category": "BENIGN",
+      "expected_is_malicious": false,
+      "raw_scanner_findings": [],
+      "verdict": "BENIGN",
+      "quarantine_action": "ALLOW",
+      "missed_due_to_obfuscation": false,
+      "missed_due_to_no_bktree": false
+    },
+    {
+      "package_name": "semver",
+      "package_version": "7.6.0",
+      "ecosystem": "npm",
+      "category": "BENIGN",
+      "expected_is_malicious": false,
+      "raw_scanner_findings": [],
+      "verdict": "BENIGN",
+      "quarantine_action": "ALLOW",
+      "missed_due_to_obfuscation": false,
+      "missed_due_to_no_bktree": false
+    },
+    {
+      "package_name": "fakerequests",
+      "package_version": "1.0.0",
+      "ecosystem": "pypi",
+      "category": "PLAIN_MALICIOUS",
+      "expected_is_malicious": true,
+      "raw_scanner_findings": [
+        {
+          "rule_id": "raw_reverse_shell",
+          "confidence": "HIGH",
+          "message": "Suspicious pattern 'raw_reverse_shell' detected in raw code."
+        }
+      ],
+      "verdict": "MALICIOUS",
+      "quarantine_action": "QUARANTINE",
+      "missed_due_to_obfuscation": false,
+      "missed_due_to_no_bktree": false
+    },
+    {
+      "package_name": "evil-colorama",
+      "package_version": "0.4.5",
+      "ecosystem": "pypi",
+      "category": "PLAIN_MALICIOUS",
+      "expected_is_malicious": true,
+      "raw_scanner_findings": [
+        {
+          "rule_id": "raw_exfiltration",
+          "confidence": "HIGH",
+          "message": "Suspicious pattern 'raw_exfiltration' detected in raw code."
+        }
+      ],
+      "verdict": "MALICIOUS",
+      "quarantine_action": "QUARANTINE",
+      "missed_due_to_obfuscation": false,
+      "missed_due_to_no_bktree": false
+    },
+    {
+      "package_name": "pypi-token-stealer",
+      "package_version": "0.1.0",
+      "ecosystem": "pypi",
+      "category": "PLAIN_MALICIOUS",
+      "expected_is_malicious": true,
+      "raw_scanner_findings": [
+        {
+          "rule_id": "raw_exfiltration",
+          "confidence": "HIGH",
+          "message": "Suspicious pattern 'raw_exfiltration' detected in raw code."
+        }
+      ],
+      "verdict": "MALICIOUS",
+      "quarantine_action": "QUARANTINE",
+      "missed_due_to_obfuscation": false,
+      "missed_due_to_no_bktree": false
+    },
+    {
+      "package_name": "simple-reverse-shell",
+      "package_version": "0.0.1",
+      "ecosystem": "pypi",
+      "category": "PLAIN_MALICIOUS",
+      "expected_is_malicious": true,
+      "raw_scanner_findings": [
+        {
+          "rule_id": "raw_reverse_shell",
+          "confidence": "HIGH",
+          "message": "Suspicious pattern 'raw_reverse_shell' detected in raw code."
+        }
+      ],
+      "verdict": "MALICIOUS",
+      "quarantine_action": "QUARANTINE",
+      "missed_due_to_obfuscation": false,
+      "missed_due_to_no_bktree": false
+    },
+    {
+      "package_name": "plain-b64-eval",
+      "package_version": "1.0.1",
+      "ecosystem": "pypi",
+      "category": "PLAIN_MALICIOUS",
+      "expected_is_malicious": true,
+      "raw_scanner_findings": [
+        {
+          "rule_id": "raw_plain_b64_exec",
+          "confidence": "HIGH",
+          "message": "Suspicious pattern 'raw_plain_b64_exec' detected in raw code."
+        }
+      ],
+      "verdict": "MALICIOUS",
+      "quarantine_action": "QUARANTINE",
+      "missed_due_to_obfuscation": false,
+      "missed_due_to_no_bktree": false
+    },
+    {
+      "package_name": "npm-exfil-agent",
+      "package_version": "1.0.0",
+      "ecosystem": "npm",
+      "category": "PLAIN_MALICIOUS",
+      "expected_is_malicious": true,
+      "raw_scanner_findings": [
+        {
+          "rule_id": "raw_npm_malicious_script",
+          "confidence": "HIGH",
+          "message": "Suspicious pattern 'raw_npm_malicious_script' detected in raw code."
+        }
+      ],
+      "verdict": "MALICIOUS",
+      "quarantine_action": "QUARANTINE",
+      "missed_due_to_obfuscation": false,
+      "missed_due_to_no_bktree": false
+    },
+    {
+      "package_name": "malicious-test-pkg",
+      "package_version": "0.9.0",
+      "ecosystem": "npm",
+      "category": "PLAIN_MALICIOUS",
+      "expected_is_malicious": true,
+      "raw_scanner_findings": [
+        {
+          "rule_id": "raw_npm_malicious_script",
+          "confidence": "HIGH",
+          "message": "Suspicious pattern 'raw_npm_malicious_script' detected in raw code."
+        }
+      ],
+      "verdict": "MALICIOUS",
+      "quarantine_action": "QUARANTINE",
+      "missed_due_to_obfuscation": false,
+      "missed_due_to_no_bktree": false
+    },
+    {
+      "package_name": "crypto-drainer-raw",
+      "package_version": "1.1.0",
+      "ecosystem": "npm",
+      "category": "PLAIN_MALICIOUS",
+      "expected_is_malicious": true,
+      "raw_scanner_findings": [
+        {
+          "rule_id": "raw_npm_malicious_script",
+          "confidence": "HIGH",
+          "message": "Suspicious pattern 'raw_npm_malicious_script' detected in raw code."
+        }
+      ],
+      "verdict": "MALICIOUS",
+      "quarantine_action": "QUARANTINE",
+      "missed_due_to_obfuscation": false,
+      "missed_due_to_no_bktree": false
+    },
+    {
+      "package_name": "discord-token-grab",
+      "package_version": "2.0.0",
+      "ecosystem": "pypi",
+      "category": "PLAIN_MALICIOUS",
+      "expected_is_malicious": true,
+      "raw_scanner_findings": [
+        {
+          "rule_id": "raw_exfiltration",
+          "confidence": "HIGH",
+          "message": "Suspicious pattern 'raw_exfiltration' detected in raw code."
+        }
+      ],
+      "verdict": "MALICIOUS",
+      "quarantine_action": "QUARANTINE",
+      "missed_due_to_obfuscation": false,
+      "missed_due_to_no_bktree": false
+    },
+    {
+      "package_name": "backdoor-direct",
+      "package_version": "0.0.2",
+      "ecosystem": "pypi",
+      "category": "PLAIN_MALICIOUS",
+      "expected_is_malicious": true,
+      "raw_scanner_findings": [
+        {
+          "rule_id": "raw_reverse_shell",
+          "confidence": "HIGH",
+          "message": "Suspicious pattern 'raw_reverse_shell' detected in raw code."
+        }
+      ],
+      "verdict": "MALICIOUS",
+      "quarantine_action": "QUARANTINE",
+      "missed_due_to_obfuscation": false,
+      "missed_due_to_no_bktree": false
+    },
+    {
+      "package_name": "colorama-ext",
+      "package_version": "0.4.7",
+      "ecosystem": "pypi",
+      "category": "OBFUSCATED_MALICIOUS",
+      "expected_is_malicious": true,
+      "raw_scanner_findings": [],
+      "verdict": "BENIGN",
+      "quarantine_action": "ALLOW",
+      "missed_due_to_obfuscation": true,
+      "missed_due_to_no_bktree": false
+    },
+    {
+      "package_name": "setup-tools-patch",
+      "package_version": "1.2.0",
+      "ecosystem": "pypi",
+      "category": "OBFUSCATED_MALICIOUS",
+      "expected_is_malicious": true,
+      "raw_scanner_findings": [],
+      "verdict": "BENIGN",
+      "quarantine_action": "ALLOW",
+      "missed_due_to_obfuscation": true,
+      "missed_due_to_no_bktree": false
+    },
+    {
+      "package_name": "python-dateutil-extra",
+      "package_version": "2.8.3",
+      "ecosystem": "pypi",
+      "category": "OBFUSCATED_MALICIOUS",
+      "expected_is_malicious": true,
+      "raw_scanner_findings": [],
+      "verdict": "BENIGN",
+      "quarantine_action": "ALLOW",
+      "missed_due_to_obfuscation": true,
+      "missed_due_to_no_bktree": false
+    },
+    {
+      "package_name": "crypto-miner-hidden",
+      "package_version": "3.0.1",
+      "ecosystem": "pypi",
+      "category": "OBFUSCATED_MALICIOUS",
+      "expected_is_malicious": true,
+      "raw_scanner_findings": [],
+      "verdict": "BENIGN",
+      "quarantine_action": "ALLOW",
+      "missed_due_to_obfuscation": true,
+      "missed_due_to_no_bktree": false
+    },
+    {
+      "package_name": "deep-learning-core",
+      "package_version": "0.1.2",
+      "ecosystem": "pypi",
+      "category": "OBFUSCATED_MALICIOUS",
+      "expected_is_malicious": true,
+      "raw_scanner_findings": [],
+      "verdict": "BENIGN",
+      "quarantine_action": "ALLOW",
+      "missed_due_to_obfuscation": true,
+      "missed_due_to_no_bktree": false
+    },
+    {
+      "package_name": "torch-speedup",
+      "package_version": "1.0.0",
+      "ecosystem": "pypi",
+      "category": "OBFUSCATED_MALICIOUS",
+      "expected_is_malicious": true,
+      "raw_scanner_findings": [],
+      "verdict": "BENIGN",
+      "quarantine_action": "ALLOW",
+      "missed_due_to_obfuscation": true,
+      "missed_due_to_no_bktree": false
+    },
+    {
+      "package_name": "high-entropy-dropper",
+      "package_version": "0.0.5",
+      "ecosystem": "pypi",
+      "category": "OBFUSCATED_MALICIOUS",
+      "expected_is_malicious": true,
+      "raw_scanner_findings": [],
+      "verdict": "BENIGN",
+      "quarantine_action": "ALLOW",
+      "missed_due_to_obfuscation": true,
+      "missed_due_to_no_bktree": false
+    },
+    {
+      "package_name": "npm-obfuscated-loader",
+      "package_version": "2.1.0",
+      "ecosystem": "npm",
+      "category": "OBFUSCATED_MALICIOUS",
+      "expected_is_malicious": true,
+      "raw_scanner_findings": [],
+      "verdict": "BENIGN",
+      "quarantine_action": "ALLOW",
+      "missed_due_to_obfuscation": true,
+      "missed_due_to_no_bktree": false
+    },
+    {
+      "package_name": "lodash-util-chain",
+      "package_version": "4.17.22",
+      "ecosystem": "npm",
+      "category": "OBFUSCATED_MALICIOUS",
+      "expected_is_malicious": true,
+      "raw_scanner_findings": [],
+      "verdict": "BENIGN",
+      "quarantine_action": "ALLOW",
+      "missed_due_to_obfuscation": true,
+      "missed_due_to_no_bktree": false
+    },
+    {
+      "package_name": "express-cors-plugin",
+      "package_version": "1.0.4",
+      "ecosystem": "npm",
+      "category": "OBFUSCATED_MALICIOUS",
+      "expected_is_malicious": true,
+      "raw_scanner_findings": [],
+      "verdict": "BENIGN",
+      "quarantine_action": "ALLOW",
+      "missed_due_to_obfuscation": true,
+      "missed_due_to_no_bktree": false
+    },
+    {
+      "package_name": "reqeusts",
+      "package_version": "2.31.1",
+      "ecosystem": "pypi",
+      "category": "TYPOSQUATTING",
+      "expected_is_malicious": true,
+      "raw_scanner_findings": [],
+      "verdict": "BENIGN",
+      "quarantine_action": "ALLOW",
+      "missed_due_to_obfuscation": false,
+      "missed_due_to_no_bktree": true
+    },
+    {
+      "package_name": "numpi",
+      "package_version": "1.26.5",
+      "ecosystem": "pypi",
+      "category": "TYPOSQUATTING",
+      "expected_is_malicious": true,
+      "raw_scanner_findings": [],
+      "verdict": "BENIGN",
+      "quarantine_action": "ALLOW",
+      "missed_due_to_obfuscation": false,
+      "missed_due_to_no_bktree": true
+    },
+    {
+      "package_name": "reqursts",
+      "package_version": "2.31.2",
+      "ecosystem": "pypi",
+      "category": "TYPOSQUATTING",
+      "expected_is_malicious": true,
+      "raw_scanner_findings": [],
+      "verdict": "BENIGN",
+      "quarantine_action": "ALLOW",
+      "missed_due_to_obfuscation": false,
+      "missed_due_to_no_bktree": true
+    },
+    {
+      "package_name": "pydantc",
+      "package_version": "2.6.5",
+      "ecosystem": "pypi",
+      "category": "TYPOSQUATTING",
+      "expected_is_malicious": true,
+      "raw_scanner_findings": [],
+      "verdict": "BENIGN",
+      "quarantine_action": "ALLOW",
+      "missed_due_to_obfuscation": false,
+      "missed_due_to_no_bktree": true
+    },
+    {
+      "package_name": "lodssh",
+      "package_version": "4.17.22",
+      "ecosystem": "npm",
+      "category": "TYPOSQUATTING",
+      "expected_is_malicious": true,
+      "raw_scanner_findings": [],
+      "verdict": "BENIGN",
+      "quarantine_action": "ALLOW",
+      "missed_due_to_obfuscation": false,
+      "missed_due_to_no_bktree": true
+    }
+  ],
+  "conclusion": "Замер «До» показал низкий Recall = 40.0% (<= 0.62 по ТЗ) на выборке из 50 пакетов. Базовый сканер пропустил 10 из 10 обфусцированных закладок и 100% тайпосквоттинга. В КТ-2 требуется реализация ASTConstantFolder и MetricBKTree для достижения Recall >= 0.94."
+}

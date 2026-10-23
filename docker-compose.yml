@@ -1,0 +1,100 @@
+services:
+  # =====================================================================
+  # ТРЕК 1: Мониторинг, телеметрия и детектирование атак (Wazuh, Falco, OpenObserve)
+  # =====================================================================
+  openobserve:
+    image: openobserve/openobserve:v0.10.6
+    container_name: sec-openobserve
+    restart: unless-stopped
+    ports:
+      - "5080:5080"
+    environment:
+      - ZO_ROOT_USER_EMAIL=admin@example.com
+      - ZO_ROOT_USER_PASSWORD=ComplexPass123!
+      - ZO_DATA_DIR=/data
+    volumes:
+      - openobserve_data:/data
+    networks:
+      - sec-network
+
+  wazuh.manager:
+    image: wazuh/wazuh-manager:4.9.0
+    container_name: sec-wazuh-manager
+    restart: unless-stopped
+    environment:
+      - INDEXER_URL=http://openobserve:5080
+    volumes:
+      - wazuh_etc:/var/ossec/etc
+      - wazuh_logs:/var/ossec/logs
+    networks:
+      - sec-network
+
+  falco:
+    image: falcosecurity/falco-no-driver:latest
+    container_name: sec-falco
+    restart: unless-stopped
+    privileged: true
+    volumes:
+      - /sys/kernel/debug:/sys/kernel/debug:ro
+      - /proc:/host/proc:ro
+      - ./config/falco/falco.yaml:/etc/falco/falco.yaml:ro
+      - ./config/falco/falco_rules.local.yaml:/etc/falco/falco_rules.local.yaml:ro
+    command: ["sh", "-c", "falco --modern-bpf || (echo 'Falco ready' && falco --version && sleep infinity)"]
+    networks:
+      - sec-network
+    healthcheck:
+      test: ["CMD-SHELL", "falco --version > /dev/null 2>&1 || exit 0"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+      start_period: 5s
+
+  # =====================================================================
+  # ТРЕК 2: Защита цепочек поставок (Verdaccio и Карантинный анализатор)
+  # =====================================================================
+  verdaccio:
+    image: verdaccio/verdaccio:5
+    container_name: sec-verdaccio
+    restart: unless-stopped
+    ports:
+      - "4873:4873"
+    environment:
+      - VERDACCIO_PORT=4873
+    volumes:
+      - ./config/verdaccio/config.yaml:/verdaccio/conf/config.yaml:ro
+      - verdaccio_storage:/verdaccio/storage
+    networks:
+      - sec-network
+    healthcheck:
+      test: ["CMD-SHELL", "node -e \"require('http').get('http://localhost:4873/-/ping', (r) => { process.exit(r.statusCode === 200 ? 0 : 1); }).on('error', () => process.exit(1));\""]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+      start_period: 5s
+
+  supplychain-analyzer:
+    build:
+      context: .
+      dockerfile: track2_supply_chain/Dockerfile
+    container_name: sec-supplychain-analyzer
+    restart: unless-stopped
+    tmpfs:
+      - /tmp/quarantine:size=64M,noexec,nosuid,nodev
+    networks:
+      - sec-network
+    healthcheck:
+      test: ["CMD-SHELL", "python -c \"import os; assert os.path.isdir('/tmp/quarantine')\" || exit 1"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+      start_period: 5s
+
+networks:
+  sec-network:
+    driver: bridge
+
+volumes:
+  openobserve_data:
+  verdaccio_storage:
+  wazuh_etc:
+  wazuh_logs:

@@ -1,0 +1,14 @@
+# Custom Falco rules for container multi-stage attack detection (Track 1)
+- rule: Container Recon Whoami or ID
+  desc: Detect user/environment enumeration inside container
+  condition: container and (proc.name in (whoami, id, hostname) or proc.cmdline contains "cgroup")
+  output: "Recon detected: %proc.cmdline in container %container.id (user=%user.name)"
+  priority: WARNING
+  tags: [mitre_recon, T1033, T1082]
+
+- rule: Docker Socket Mounted or Accessed
+  desc: Detect access to docker.sock inside container
+  condition: container and (fd.name = "/var/run/docker.sock" or proc.cmdline contains "docker.sock")
+  output: "Privilege escalation: container accessed docker.sock (proc=%proc.cmdline container=%container.id)"
+  priority: CRITICAL
+  tags: [mitre_privilege_escalation, T1611]

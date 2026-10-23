@@ -1,0 +1,43 @@
+{
+  "checkpoint": "KT-1",
+  "track": "Track 1: Detection Engineering & Stateful CEP",
+  "experiment": "Experiment 1 (Baseline Before Sigma/CEP Engine)",
+  "generated_at": "2026-10-23T05:17:47.273704+00:00",
+
+  "dataset_summary": {
+    "source": "OTRF Security-Datasets (Mordor) Sample",
+    "total_events": 5000,
+    "benign_background_events": 4500,
+    "attack_events": 500,
+    "attack_scenarios_count": 10
+  },
+  "atomic_siem_results": {
+    "total_alerts_generated": 1763,
+    "true_positives": 362,
+    "false_positives": 1401,
+    "false_negatives": 138,
+    "true_negatives": 3099
+  },
+  "metrics": {
+    "false_positive_rate_fpr": 0.3113,
+    "false_negative_rate_fnr": 0.276,
+    "precision": 0.2053,
+    "recall": 0.724,
+    "f1_score": 0.3199,
+    "alert_reduction_ratio_arr": 0.0,
+    "multistage_correlation_efficiency": 0.0
+  },
+  "multistage_killchain_analysis": {
+    "total_4_stage_attacks": 10,
+    "correlated_incidents_produced": 0,
+    "missed_multistage_correlations": 10,
+    "reason": "Default atomic Wazuh/SIEM rules lack stateful sliding temporal window across (host_id, container_id, user_id). Individual alerts are drowned in background healthcheck noise."
+  },
+  "hayabusa_verification": {
+    "status": "VERIFIED",
+    "output_report": "reports/hayabusa-verified.json",
+    "total_sigma_matches": 1763,
+    "syntax_validity": "100% PASS"
+  },
+  "conclusion": "Замер «До» подтверждает проблему высокой зашумленности (FPR > 20% из-за команд curl/whoami в healthcheck) и полную слепоту стандартных атомарных правил к темпоральной корреляции цепочек Recon -> Exploit -> PrivEsc -> Persist. Требуется внедрение StatefulCEPEngine в КТ-2."
+}

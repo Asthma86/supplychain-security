@@ -1,0 +1,21 @@
+title: Container Privilege Escalation via Mounted Docker Socket
+id: 8b4f7c2a-91d3-4e55-a812-3f9c02d17e01
+status: experimental
+description: Detects execution of docker CLI or curl against /var/run/docker.sock inside a container
+date: 2026-10-16
+tags:
+  - attack.privilege_escalation
+  - attack.t1611
+logsource:
+  product: linux
+  service: auditd
+detection:
+  selection_socket:
+    type: 'EXECVE'
+    a0|contains:
+      - 'docker'
+      - 'curl'
+      - 'nc'
+    a_args|contains: '/var/run/docker.sock'
+  condition: selection_socket
+level: critical

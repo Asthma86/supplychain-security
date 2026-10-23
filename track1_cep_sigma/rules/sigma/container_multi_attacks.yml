@@ -1,0 +1,49 @@
+title: Container Web Shell or Reverse Shell Spawned
+id: b2345678-9abc-def0-1234-56789abcdef0
+status: experimental
+description: Detects interactive shell spawned from web server process
+date: 2026-10-16
+tags:
+  - attack.execution
+  - attack.t1190
+  - attack.t1059.004
+logsource:
+  product: linux
+  service: auditd
+detection:
+  selection:
+    type: 'EXECVE'
+    a0|contains:
+      - '/bin/sh'
+      - '/bin/bash'
+      - 'sh'
+      - 'bash'
+    pname|contains:
+      - 'nginx'
+      - 'python'
+      - 'node'
+      - 'httpd'
+  condition: selection
+level: high
+---
+title: Container Persistence via Crontab or Systemd
+id: c3456789-abcd-ef01-2345-6789abcdef01
+status: experimental
+description: Detects scheduled task creation or persistence modification inside container
+date: 2026-10-16
+tags:
+  - attack.persistence
+  - attack.t1053.003
+logsource:
+  product: linux
+  service: auditd
+detection:
+  selection:
+    type: 'PATH'
+    name|contains:
+      - '/etc/cron'
+      - '/var/spool/cron'
+      - '/etc/systemd/system'
+      - '/root/.ssh/authorized_keys'
+  condition: selection
+level: critical

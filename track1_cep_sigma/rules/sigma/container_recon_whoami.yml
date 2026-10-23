@@ -1,0 +1,21 @@
+title: Container Environment Reconnaissance via Whoami and ID
+id: a1234567-89ab-cdef-0123-456789abcdef
+status: experimental
+description: Detects execution of reconnaissance tools (whoami, id, uname) inside a container
+date: 2026-10-16
+tags:
+  - attack.discovery
+  - attack.t1033
+  - attack.t1082
+logsource:
+  product: linux
+  service: auditd
+detection:
+  selection:
+    type: 'EXECVE'
+    a0|contains:
+      - 'whoami'
+      - 'id'
+      - 'uname'
+  condition: selection
+level: low
